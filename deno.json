@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read src/main.ts",
+    "dev": "deno run --watch --allow-net --allow-read src/main.ts",
+    "cache": "deno cache src/deps.ts",
+    "check": "deno check src/main.ts",
+    "fmt": "deno fmt --watch .",
+    "fmt:check": "deno fmt --check",
+    "lint": "deno lint"
+  },
+  "fmt": {
+    "singleQuote": true
+  }
+}
