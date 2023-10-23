@@ -25,6 +25,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "short-url"
-          entrypoint: "src/main.ts" # 📝 Update the entrypoint if necessary
-          root: "." # 📝 Update the root if necessary
+          project: "lazy-dingo-77"
+          entrypoint: "src/main.ts"
+          root: "."
