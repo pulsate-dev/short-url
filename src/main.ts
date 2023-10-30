@@ -1,9 +1,17 @@
-import { Hono } from './deps.ts';
+import { Hono, logger, poweredBy } from './deps.ts';
 
 const app = new Hono();
 
+app.use('*', logger(), poweredBy());
+// todo: faviconを提供する
+// app.all('/favicon.ico', serveStatic('./public/favicon.ico'));
+
+app.get('/', (c) => {
+  return c.notFound();
+});
+
 app.get('/discord', (c) => {
-  return c.text('Preparing...');
+  return c.notFound();
 });
 
 app.get('/github', (c) => {
