@@ -7,11 +7,11 @@ app.use('*', logger(), poweredBy());
 // app.all('/favicon.ico', serveStatic('./public/favicon.ico'));
 
 app.get('/', (c) => {
-  return c.notFound();
+  return c.redirect('https://pulsate.dev', 302);
 });
 
 app.get('/discord', (c) => {
-  return c.notFound();
+  return c.redirect('https://discord.gg/Pf5EFQ5zbj', 302);
 });
 
 app.get('/github', (c) => {
