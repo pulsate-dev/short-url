@@ -27,5 +27,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "link-pulsate-dev"
-          entrypoint: "src/main.ts"
+          entrypoint: "main.ts"
           root: "."
