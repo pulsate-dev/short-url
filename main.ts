@@ -4,7 +4,7 @@ import { logger, poweredBy } from 'hono/middleware';
 const app = new Hono();
 
 app.use('*', logger(), poweredBy());
-// todo: faviconを提供する
+// TODO: add favicon
 // app.all('/favicon.ico', serveStatic('./public/favicon.ico'));
 
 app.get('/', (c) => {
@@ -29,6 +29,22 @@ app.get('/youtube', (c) => {
 
 app.get('/community', (c) => {
   return c.redirect('https://github.com/orgs/pulsate-dev/discussions', 302);
+});
+
+// TODO: replace pulsate.dev/code-of-conduct
+app.get('/rules', (c) => {
+  return c.redirect(
+    'https://github.com/pulsate-dev/.github/blob/main/CODE_OF_CONDUCT.md',
+    302,
+  );
+});
+
+// TODO: replace pulsate.dev/code-of-conduct-ja
+app.get('/rules-ja', (c) => {
+  return c.redirect(
+    'https://github.com/pulsate-dev/.github/blob/main/CODE_OF_CONDUCT_JA.md',
+    302,
+  );
 });
 
 Deno.serve(app.fetch);
