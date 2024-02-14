@@ -27,8 +27,16 @@ app.get('/youtube', (c) => {
   return c.redirect('https://youtube.com/@pulsate-dev', 302);
 });
 
-app.get('/community', (c) => {
+app.get('/discussions', (c) => {
   return c.redirect('https://github.com/orgs/pulsate-dev/discussions', 302);
+});
+
+// TODO: remove /community
+app.get('/community', (c) => {
+  return c.text(
+    '410 Gone: このエンドポイントは現在 /discussions に置き換わっています.',
+    410,
+  );
 });
 
 // TODO: replace pulsate.dev/code-of-conduct
