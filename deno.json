@@ -1,14 +1,19 @@
 {
   "tasks": {
-    "start": "deno run --allow-net --allow-read src/main.ts",
-    "dev": "deno run --watch --allow-net --allow-read src/main.ts",
-    "cache": "deno cache src/deps.ts",
-    "check": "deno check src/main.ts",
+    "start": "deno run --allow-net --allow-read main.ts",
+    "dev": "deno run --watch --allow-net --allow-read main.ts",
+    "cache": "deno cache deps.ts",
+    "check": "deno check main.ts",
     "fmt": "deno fmt --watch .",
     "fmt:check": "deno fmt --check",
     "lint": "deno lint"
   },
   "fmt": {
-    "singleQuote": true
+    "singleQuote": true,
+    "semiColons": true
+  },
+  "imports": {
+    "hono/mod": "https://deno.land/x/hono@v3.7.6/mod.ts",
+    "hono/middleware": "https://deno.land/x/hono@v3.7.6/middleware.ts"
   }
 }
