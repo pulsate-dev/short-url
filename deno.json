@@ -13,7 +13,7 @@
     "semiColons": true
   },
   "imports": {
-    "hono/mod": "https://deno.land/x/hono@v3.7.6/mod.ts",
-    "hono/middleware": "https://deno.land/x/hono@v3.7.6/middleware.ts"
+    "hono/mod": "https://deno.land/x/hono@v4.0.2/mod.ts",
+    "hono/middleware": "https://deno.land/x/hono@v4.0.2/middleware.ts"
   }
 }

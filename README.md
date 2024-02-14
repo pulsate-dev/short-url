@@ -18,6 +18,8 @@ with [Deno Deploy](https://deno.com/deploy).
 | `/x`         | Pulsate X                                 |
 | `/youtube`   | Pulsate YouTube                           |
 | `/community` | Pulsate Community (GitHub Org Discussion) |
+| `/rules`     | Pulsate Code of Conduct                   |
+| `/rules-ja`  | Pulsate Code of Conduct (Japanese)        |
 
 - When redirecting, a status code of
   [`302`](https://developer.mozilla.org/ja/docs/Web/HTTP/Status/302) is returned
