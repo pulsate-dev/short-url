@@ -1,4 +1,5 @@
-import { Hono, logger, poweredBy } from './deps.ts';
+import { Hono } from 'hono/mod';
+import { logger, poweredBy } from 'hono/middleware';
 
 const app = new Hono();
 
