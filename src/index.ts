@@ -3,7 +3,7 @@ import { Hono } from "hono";
 const app = new Hono();
 
 app.get("/", (c) => {
-	return c.redirect("https://pulsate.dev", 302);
+	return c.text("ホームページ準備中...");
 });
 
 app.get("/discord", (c) => {
