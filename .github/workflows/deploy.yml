@@ -3,8 +3,7 @@ name: Deploy
 on:
   push:
     branches: main
-  pull_request:
-    branches: main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -16,16 +15,20 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Install Deno
-        uses: denoland/setup-deno@v1
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          deno-version: v1.x
+          bun-version: 1.x.x
 
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
         with:
-          project: "link-pulsate-dev"
-          entrypoint: "main.ts"
-          root: "."
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          precommands: bun run build
