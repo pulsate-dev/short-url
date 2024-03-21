@@ -32,3 +32,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           precommands: bun run build
+          command: >
+            deploy ./build/index.js
+            --name link.pulsate.dev --compatibility-date "2022-04-05"

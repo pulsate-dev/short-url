@@ -13,7 +13,6 @@
     "dev": "bun run src/index.ts",
     "start": "bun run build/index.js",
     "build": "bun build --entrypoints ./src/index.ts --outdir ./build --target bun",
-    "deploy": "wrangler deploy ./build/index.js --name link.pulsate.dev",
     "format": "bunx @biomejs/biome format --write ./src",
     "lint": "bunx @biomejs/biome lint ./src",
     "check": "bunx @biomejs/biome check ./src",

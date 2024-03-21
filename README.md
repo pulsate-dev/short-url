@@ -1,6 +1,6 @@
 # pulsate-dev/link.pulsate.dev
 
-[![Deno CI](https://github.com/pulsate-dev/link.pulsate.dev/actions/workflows/deno.yaml/badge.svg)](https://github.com/pulsate-dev/link.pulsate.dev/actions/workflows/deno.yaml)
+[![CI](https://github.com/pulsate-dev/link.pulsate.dev/actions/workflows/ci.yaml/badge.svg)](https://github.com/pulsate-dev/link.pulsate.dev/actions/workflows/ci.yaml)
 [![Deploy](https://github.com/pulsate-dev/link.pulsate.dev/actions/workflows/deploy.yml/badge.svg)](https://github.com/pulsate-dev/link.pulsate.dev/actions/workflows/deploy.yml)
 
 Shortened URL using pulsate.dev: can be used to access each community.
@@ -8,7 +8,7 @@ Shortened URL using pulsate.dev: can be used to access each community.
 ---
 
 link.pulsate.dev uses [Hono](https://github.com/honojs/hono) and is deployed
-with [Deno Deploy](https://deno.com/deploy).
+with [Cloudflare Workers](https://workers.cloudflare.com/).
 
 | Endpoint       | Redirects to                       |
 | -------------- | ---------------------------------- |
