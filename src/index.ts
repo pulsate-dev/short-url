@@ -7,7 +7,7 @@ app.get("/", (c) => {
 });
 
 app.get("/discord", (c) => {
-	return c.redirect("https://discord.gg/Pf5EFQ5zbj", 302);
+	return c.redirect("https://discord.gg/NmczMnWGvh", 302);
 });
 
 app.get("/github", (c) => {
