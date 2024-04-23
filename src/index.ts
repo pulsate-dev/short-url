@@ -26,28 +26,4 @@ app.get("/discussions", (c) => {
 	return c.redirect("https://github.com/orgs/pulsate-dev/discussions", 302);
 });
 
-// TODO: remove /community
-app.get("/community", (c) => {
-	return c.text(
-		"410 Gone: このエンドポイントは現在 /discussions に置き換わっています.",
-		410,
-	);
-});
-
-// TODO: replace pulsate.dev/code-of-conduct
-app.get("/rules", (c) => {
-	return c.redirect(
-		"https://github.com/pulsate-dev/.github/blob/main/CODE_OF_CONDUCT.md",
-		302,
-	);
-});
-
-// TODO: replace pulsate.dev/code-of-conduct-ja
-app.get("/rules-ja", (c) => {
-	return c.redirect(
-		"https://github.com/pulsate-dev/.github/blob/main/CODE_OF_CONDUCT_JA.md",
-		302,
-	);
-});
-
 export default app;
