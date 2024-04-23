@@ -15,7 +15,7 @@ app.get("/github", (c) => {
 });
 
 app.get("/x", (c) => {
-	return c.redirect("https://x.com/PulsateDev", 302);
+	return c.redirect("https://x.com/pulsate_dev", 302);
 });
 
 app.get("/youtube", (c) => {
