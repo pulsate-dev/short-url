@@ -22,5 +22,3 @@ Accessing an endpoint with no destination will return a [`404`](https://develope
 | `/x`           | Pulsate X                          |
 | `/youtube`     | Pulsate YouTube                    |
 | `/discussions` | Pulsate Org Discussion             |
-| `/rules`       | Pulsate Code of Conduct            |
-| `/rules-ja`    | Pulsate Code of Conduct (Japanese) |
