@@ -26,4 +26,8 @@ app.get("/discussions", (c) => {
 	return c.redirect("https://github.com/orgs/pulsate-dev/discussions", 302);
 });
 
+app.get("/bluesky", (c) => {
+	return c.redirect("https://bsky.app/profile/pulsate.dev", 302);
+});
+
 export default app;

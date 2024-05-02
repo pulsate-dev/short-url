@@ -22,3 +22,4 @@ Accessing an endpoint with no destination will return a [`404`](https://develope
 | `/x`           | Pulsate X                          |
 | `/youtube`     | Pulsate YouTube                    |
 | `/discussions` | Pulsate Org Discussion             |
+| `/bluesky`     | Pulsate Bluesky                    |
