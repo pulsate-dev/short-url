@@ -17,6 +17,8 @@ Accessing an endpoint with no destination will return a [`404`](https://develope
 | Endpoint       | Redirects to ...                   |
 | -------------- | ---------------------------------- |
 | `/`            | Pulsate Website                    |
+| `/docs`        | Pulsate Documentation              |
+| `/api`         | Pulsate API Reference              |
 | `/discord`     | Pulsate Discord Server             |
 | `/github`      | Pulsate GitHub                     |
 | `/x`           | Pulsate X                          |
