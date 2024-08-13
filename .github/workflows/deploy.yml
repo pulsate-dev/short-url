@@ -19,7 +19,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+        # https://github.com/oven-sh/setup-bun/issues/37#issuecomment-2256820622
+        uses: oven-sh/setup-bun@feat/implement-wildcard-resolution-into-the-action
         with:
           bun-version: 1.0.x
 
