@@ -1,6 +1,8 @@
 import { Elysia } from "elysia";
 
-new Elysia()
+const app = new Elysia();
+
+app
 	.get("/", ({ redirect }) => {
 		return redirect("https://pulsate.dev", 302);
 	})
@@ -24,9 +26,10 @@ new Elysia()
 	})
 	.get("/discussions", ({ redirect }) => {
 		return redirect("https://github.com/orgs/pulsate-dev/discussions", 302);
-	})
-	.listen(3000);
+	});
 
-if (process.env.NODE_ENV !== "production") {
-	console.log("Listening on port 3000 - http://localhost:3000");
-}
+export default {
+	async fetch(request: Request): Promise<Response> {
+		return await app.fetch(request);
+	},
+};
