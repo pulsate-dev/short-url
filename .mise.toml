@@ -1,2 +1,4 @@
 [tools]
 bun = "1"
+# Note: Required for the lefthook pre-commit hook
+node = "20.16.0"
