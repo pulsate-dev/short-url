@@ -22,6 +22,6 @@ Accessing an endpoint with no destination will return a [`404`](https://develope
 | `/discord`     | Pulsate Discord Server             |
 | `/github`      | Pulsate GitHub                     |
 | `/x`           | Pulsate X                          |
+| `/fediverse`   | Pulsate Fediverse (Growthers)      |
 | `/youtube`     | Pulsate YouTube                    |
 | `/discussions` | Pulsate Org Discussion             |
-| `/bluesky`     | Pulsate Bluesky                    |

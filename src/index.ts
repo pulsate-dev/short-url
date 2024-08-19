@@ -11,7 +11,7 @@ app.get("/docs", (c) => {
 });
 
 app.get("/api", (c) => {
-	return c.redirect("https://api.pulsate.dev/reference", 302);
+	return c.redirect("https://docs.pulsate.dev/api-reference", 302);
 });
 
 app.get("/discord", (c) => {
@@ -22,16 +22,16 @@ app.get("/github", (c) => {
 	return c.redirect("https://github.com/pulsate-dev/", 302);
 });
 
-app.get("/x", (c) => {
+app.get("/twitter", (c) => {
 	return c.redirect("https://x.com/pulsate_dev", 302);
+});
+
+app.get("/fediverse", (c) => {
+	return c.redirect("https://mi.growthers.dev/@pulsate", 302);
 });
 
 app.get("/youtube", (c) => {
 	return c.redirect("https://youtube.com/@pulsate-dev", 302);
-});
-
-app.get("/bluesky", (c) => {
-	return c.redirect("https://bsky.app/profile/pulsate.dev", 302);
 });
 
 app.get("/discussions", (c) => {
